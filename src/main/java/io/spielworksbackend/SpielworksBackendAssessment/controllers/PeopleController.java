@@ -36,7 +36,6 @@ public class PeopleController {
                 .path("/{id}")
                 .buildAndExpand(peopleResponse.getId())
                 .toUri();
-        System.out.println(location);
         return ResponseEntity.created(location).build();
 
     }
